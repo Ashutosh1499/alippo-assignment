@@ -1,0 +1,65 @@
+.dialogBoxWrapper {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.dialogBox {
+	padding: 1rem;
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	background-color: white;
+	border: 2px solid #e30047;
+	border-radius: 7px;
+	color: black;
+}
+.dialogBox form {
+	display: flex;
+	flex-direction: column;
+}
+.dialogBox input {
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+}
+.dialogBox > form > button {
+	all: unset;
+}
+.dialogBoxButtons {
+	display: flex;
+	width: 100%;
+}
+.dialogBoxButtons button {
+	width: 100%;
+	padding: 1rem;
+	margin: 1rem;
+	background-color: #e30047;
+	cursor: pointer;
+	border: none;
+	border-radius: 7px;
+	transition-duration: 0.3s;
+	color: white;
+}
+.dialogBoxButtons button:first-child {
+	background-color: gray;
+}
+.dialogBoxButtons button:hover {
+	filter: brightness(0.8);
+}
+.animate-dialogBox {
+	animation: testing 0.3s ease-in-out forwards;
+}
+@keyframes testing {
+	from {
+		transform: translate(0, 10%);
+		opacity: 0;
+	}
+	to {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
